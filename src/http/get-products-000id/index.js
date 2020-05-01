@@ -1,6 +1,6 @@
 exports.handler = async function http (req) {
   console.log('Products API called')
-  console.log(req.params);
+  console.log(req);
   return {
     headers: {
       'content-type': 'application/json; charset=utf8',
