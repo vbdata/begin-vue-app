@@ -7,6 +7,7 @@ folder dist
 @http
 get /api
 get /products
+get /products/:id
 
 @tables
 data
