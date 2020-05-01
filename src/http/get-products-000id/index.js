@@ -1,6 +1,6 @@
 exports.handler = async function http (req) {
   console.log('Products API called look for sepcific Id.')
-  console.log(req);
+  console.log(req.pathParameters);
   return {
     headers: {
       'content-type': 'application/json; charset=utf8',
