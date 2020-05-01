@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>node-vue</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but node-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="vue.js"></script> -->
+    <title>First vue app</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="name">
+        <p>Hello {{ name }}</p>
+    </div>
+
+<script>
+    new Vue({
+     el: '#app',
+     data(){
+         return{
+             name: 'Viktor'
+         };
+     }   
+    });
+
+</script>
+
+</body>
 </html>
