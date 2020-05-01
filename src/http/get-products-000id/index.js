@@ -7,7 +7,7 @@ exports.handler = async function http (req) {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0'
     },
     body: JSON.stringify({
-      message: 'Sending you the product id: '+req.pathParameters.id+' you need!'
+      message: 'Sending you the product id: '+req.pathParameters.id.value+' you need!'
     })
   }
 }
